@@ -1,0 +1,11 @@
+#Let's consider a labyrinth as a n × m matrix, where the corridors are denoted by 1s
+#situated in consecutive positions on the same line or column. The rest of the
+#elements are 0. Within the labyrinth, a person is considered to be in position (i, j).
+#Write a program that lists all exit routes which do not pass the same place twice.
+#Input: n, m, the rows of the matrix, the coordinates of the exit and the coordinates of
+#the person (row, column). Output: a sequence of row/column pairs representing the
+#person's successive position.
+
+from random import random
+
+map = [int(random()+0.5)
