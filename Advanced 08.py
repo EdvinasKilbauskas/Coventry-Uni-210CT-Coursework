@@ -58,10 +58,10 @@ quick_sort(array, 0, len(array)-1)
 
 string = 'th'
 if m == 1:
-  string = 'st'
+	string = 'st'
 if m == 2:
-  string = 'nd'
+	string = 'nd'
 if m == 3:
-  string = 'rd'
+	string = 'rd'
   
 print(str(m) + string + " smallest element out of sequence " + str(unsorted) + " is " + str(array[m-1]))
