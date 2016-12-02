@@ -45,7 +45,7 @@ while True:
 	try:
 		m = int(input("Please enter which smallest number you want to get out of this sequence (number id): "))
 		if m < 1 or m > len(array):
-		  assert ValueError()
+			  raise ValueError()
 	except BaseException:
 		print("Number must be an integer between 0 and " + str(len(array)))
 		continue
@@ -63,5 +63,5 @@ if m == 2:
 	string = 'nd'
 if m == 3:
 	string = 'rd'
-  
+
 print(str(m) + string + " smallest element out of sequence " + str(unsorted) + " is " + str(array[m-1]))
